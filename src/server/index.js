@@ -24,7 +24,7 @@ app.use(express.static("dist"));
 // Set up the server.
 const port = 8081;
 app.listen(port, () => {
-  console.log(`running on localhost: ${port}`);
+    console.log(`running on localhost: ${port}`);
 });
 console.log(process.env);
 // Set aylien API credentias.
@@ -33,17 +33,22 @@ const textapi = new aylien({
     application_id: process.env.API_ID,
     application_key: process.env.API_KEY
 });
-
+debugger;
 // Get Route.
-app.get("/", function(req, res) {
-  res.sendFile("dist/index.html");
+app.get("/", function (req, res) {
+    res.sendFile("dist/index.html");
 });
 
 // Post Route.
 app.post("/article", (req, res) => {
-  textapi.sentiment({ url: req.body.url }, (error, response) => {
-    if (error === null) {
-      res.send(response);
-    }
-  });
+    textapi.sentiment({ url: req.body.url }, (error, response) => {
+        if (error === null) {
+            res.send(response);
+        } else {
+            console.log(error);
+            //console.log(response);
+            res.status(400).send(new Error(error));
+            //res.send(error);
+        }
+    });
 });
