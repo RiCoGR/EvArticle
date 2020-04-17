@@ -5,8 +5,8 @@ This application evaluates a News Article with Natural Language Processing. Afte
 - Clone the repository.
 - Sign up for the `Aylien` API key, and use your keys in the code.
 - Create a .env file with your API credentials:
-	API_ID='xxxxxxx'
-	API_KEY='xxxxxxxxxxxxxxxxxxxxxxx'
+  - API_ID='xxxxxxx'
+  - API_KEY='xxxxxxxxxxxxxxxxxxxxxxx'
 - In root folder run:
   - `npm install`
   - `npm run build-prod` (production server)
