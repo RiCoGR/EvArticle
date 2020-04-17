@@ -1,0 +1,19 @@
+$base-text-color: rgb(38, 38, 37);
+$base-text-accent-color: rgb(15, 128, 162);
+
+form {
+  border: 1px solid $base-text-color;
+  border-radius: 3px;
+  padding: 3em 2em;
+
+  input {
+    padding: 1em 1.5em;
+    margin-bottom: 3em;
+    width: 100%;
+
+    &:focus {
+      outline: none; // overwrite the default style
+      border: 1px solid $base-text-accent-color;
+    }
+  }
+}

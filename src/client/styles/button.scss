@@ -1,0 +1,24 @@
+/*color variables*/
+$base-body-color: rgb(252, 252, 250);
+$base-text-accent-color: rgb(15, 128, 162);
+
+button {
+    background: $base-body-color;
+    color: $base-text-accent-color;
+    border: 1px solid $base-text-accent-color;
+    padding: 0.6em 1.2em;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0px 0px 2rem rgb(0, 255, 195);
+    border-radius: 15px;
+
+    &:active,
+    &:hover,
+    &:focus {
+        outline: none; // overwrite the default style
+        color: lighten($base-text-accent-color, 15);
+        border-color: lighten($base-text-accent-color, 10);
+    }
+
+    ;
+}

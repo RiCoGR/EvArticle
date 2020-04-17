@@ -1,0 +1,63 @@
+﻿<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <title>EvArticle</title>
+    <link rel="icon" href="../img/favicon.ico">
+
+</head>
+
+<body>
+    <header>
+        <h1>EvArticle</h1>
+        <br />
+        <h3>Evaluate News Articles with Natural Language Processing</h3>
+    </header>
+    <br />
+    <br />
+    <main>
+        <br />
+
+        <section class="main_section">
+            <form onsubmit="return Client.handleSubmit(event)">
+                <input id="url" type="text" placeholder="Please type URL of an article" autofocus>
+                <button>Evaluate</button>
+            </form>
+        </section>
+        <br />
+        <br />
+        <div id="loading"></div>
+        <div id="error" class="error"></div>
+
+        <section class="results" id="results">
+            <ul>
+                <li>
+                    <strong>Polarity:</strong>
+                    <span id="polarity"></span>
+                </li>
+                <li>
+                    <strong>Subjectivity:</strong>
+                    <span id="subjectivity"></span>
+                </li>
+                <li>
+                    <strong>Polarity confidence:</strong>
+                    <span id="polarity_confidence"></span>
+                </li>
+                <li>
+                    <strong>Subjectivity confidence:</strong>
+                    <span id="subjectivity_confidence"></span>
+                </li>
+                <li>
+                    <strong>Text:</strong>
+                    <blockquote id="text"></blockquote>
+                </li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>Copyright 2020 © EvArticle - <a href="https://www.linkedin.com/in/sakarikos-kleanthis/">RiCo</a></p>
+
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,17 @@
+/*color variables*/
+$base-text-accent-color: rgb(15, 128, 162);
+$error-text-color: rgb(255, 91, 76);
+
+.error {
+  color: $error-text-color;
+}
+
+.results {
+  li {
+    margin-bottom: 0.5em;
+
+    strong {
+      color: darken($base-text-accent-color, 20);
+    }
+  }
+}

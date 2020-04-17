@@ -1,0 +1,18 @@
+main {
+    flex: 2;
+
+    section {
+        max-width: 800px;
+        margin: 0 auto;
+        text-align: left;
+
+        &.main_section {
+            box-shadow: 0 1rem 2rem rgba(0,0,0,0.4);
+            text-align: center;
+        }
+
+        &.results {
+            display: none;
+        }
+    }
+}

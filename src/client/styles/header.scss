@@ -1,0 +1,11 @@
+$base-text-accent-color: rgb(15, 128, 162);
+$font-family-header: "Major Mono Display", serif;
+
+header {
+    margin: 0 auto;
+    h1 {
+        font-family: $font-family-header;
+        color: $base-text-accent-color;
+        font-size: 1.5em;
+    }
+}

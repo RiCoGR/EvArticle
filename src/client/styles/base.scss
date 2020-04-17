@@ -1,0 +1,29 @@
+@import url("https://fonts.googleapis.com/css?family=Major+Mono+Display:400,900");
+@import url("https://fonts.googleapis.com/css?family=Raleway");
+
+/*color variables*/
+$base-body-color: rgb(252, 252, 250);
+$base-text-color: rgb(38, 38, 37);
+
+/*fonts*/
+$font-family-body: "Raleway Display", Arial, Helvetica, sans-serif;
+
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    padding: 5vh 5vw;
+    background-color: #b5b5b5;
+    color: $base-text-color;
+    font-family: $font-family-body;
+    text-align: center;
+}
